@@ -1,0 +1,23 @@
+.articleContainer {
+    width: 30%;
+    border: 1px solid #cccccc;
+    margin: 1rem 0.3rem;
+}
+
+.articleImage {
+    width: 100%;
+    height: 100px;
+    background-color: #d2d2d2;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articleBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem .5rem;
+}
