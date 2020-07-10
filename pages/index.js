@@ -3,12 +3,9 @@ import ItemPreview from "../components/itemPreview/itemPreview";
 import axios from "axios";
 import { useState } from "react";
 import DoudounePers from "../components/doudounePers/doudounePers";
-
 export default function Home({ articles }) {
   return (
     <Layout>
-
-      {/* <DoudounePers/> */}
 
       <section
         style={{
@@ -37,6 +34,7 @@ export const getServerSideProps = async (context) => {
               label,
               color,
               price,
+              slug,
               picture {
                 url 
               }

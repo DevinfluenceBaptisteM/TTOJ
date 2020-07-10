@@ -2,26 +2,23 @@ import Layout from '../../components/layout'
 import axios from 'axios'
 import Link from 'next/link'
 import ErrorPage from "next/dist/pages/_error";
+import DoudounePers from '../../components/doudounePers/doudounePers'
+import styles from "../../components/layout.module.scss";
+
 
 export default function Article({article}) {
 
     if(Object.keys(article).length === 0){
-        console.log(article)
         return <ErrorPage statusCode={404}/>
     }
 
   return (
     <Layout>
-      <h1>{article.label}</h1>
 
-      {/* <hr/>
-      <section style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'space-evenly',
-        flexWrap: 'wrap'
-      }}>
-      </section> */}
+        <div>
+      {/* <h1 className={styles.nameProduct}>{article.label}</h1> */}
+        <DoudounePers item={article}/>
+      </div>
     </Layout>
   )
 }
@@ -36,8 +33,14 @@ export const getServerSideProps = async context => {
         data: {
             query: `
                 {
-                    articles(limit: 1, where: { label: "${label}"}) {
+                    articles(limit: 1, where: { slug: "${label}"}) {
                         label,
+                        slug,
+                        picture {
+                            url
+                        },
+                        price
+                        color,
                     }
                 }
             `
