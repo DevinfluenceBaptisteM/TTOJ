@@ -1,0 +1,486 @@
+/**
+* 2007-2017 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    Apply Novation <applynovation@gmail.com>
+*  @copyright 2007-2017 Apply Novation
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*/
+
+.aninstagramfeed-item {
+    float: left;
+    overflow: hidden;
+    width: 98%;
+   }
+   .aninstagramfeed-img {
+    position: relative;
+   }
+   .aninstagramfeed-info {
+     position: absolute;
+     width: 100%;
+     transition: all 500ms;
+     bottom: -60px;
+   }
+   .aninstagramfeed-info-block {
+       background: black;
+       width: 90px;
+       margin: 0 auto;
+       color: white;
+       padding: 5px;
+       text-align: center;
+   }
+   
+   .aninstagramfeed-img:hover .aninstagramfeed-info {
+    transition: all 500ms;
+    bottom: 18px;
+   }
+   
+   .aninstagramfeed-like {
+     display: inline-block;
+     background: url(../img/like.png) no-repeat left;
+     padding-left: 19px;
+     line-height: 15px;
+     padding-right: 10px;
+   }
+   
+   .aninstagramfeed-comments {
+     display: inline-block;
+     background: url(../img/comment.png) no-repeat left;
+     padding-left: 19px;
+     line-height: 15px;
+   }
+   .aninstagramfeed-img-wrapper{
+       position: relative;
+       height: 0;
+       border: none;
+       padding-top: 100%;
+   }
+   .aninstagramfeed-img {
+       width:100%;
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+       -ms-align-items: center;
+       align-items: center;
+       justify-content: center;
+   }
+   .gallery_item{
+       margin: 15px 0;
+       padding: 0 15px;
+       float:left;
+   }
+   
+   .aninstagramfeed-item:hover .widget-info-with-hover {
+       transition: all 500ms;
+       visibility: visible;
+       opacity: 1;
+   }
+   .aninstagramfeed-item:hover .widget-info {
+       transition: all 500ms;
+       bottom: 10px;
+   }
+   /*.aninstagramfeed-img img{*/
+       /*width: 100%;*/
+   
+   /*}*/
+   .widget {
+       padding:15px;
+   }
+   .widget img {
+       border:none !important;
+   }
+   .widget p, .widget a {
+       color:#000;
+       text-decoration:none;
+   }
+   .widget_image{
+       width:30%;
+       float:left;
+       margin-right: 15px;
+   }
+   .widget_image img {
+       width:100%;
+   }
+   .widget_description p{
+       margin:0px;
+   }
+   .widget_item{
+       float: left;
+       overflow: hidden;
+       width:33.33%;
+       position:relative;
+       padding:0 5px;
+       margin:5px 0;
+   }
+   .widget_row{
+       margin-left:-5px;
+       margin-right:-5px;
+   }
+   .widget_inner{
+       position:relative;
+       padding-top: 100%;
+       /*background: #fff;*/
+   }
+   .widget_inner img{
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+   }
+   .widget_top{
+       float:left;
+   }
+   .widget_body{
+       display: inline-block;
+       padding-top: 20px;
+       width: 100%;
+   }
+   .widget_userdata{
+       display:flex;
+       -webkit-flex-wrap: wrap;
+       -moz-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+       -o-flex-wrap: wrap;
+       flex-wrap: wrap;
+   }
+   .widget_userdata_item{
+       flex: 1 1 auto;
+       text-align: center;
+   }
+   .widget_userdata_item p {
+       line-height:15px;
+   }
+   .widget_userdata_count{
+       font-weight:800;
+       margin:0px;
+   }
+   .widget_userdata_content{
+       margin:0px;
+   }
+   .widget-info {
+       position: absolute;
+       width: 100%;
+       transition: all 500ms;
+       bottom: -60px;
+   }
+   .widget-info-block {
+       background: black;
+       width: 90px;
+       margin: 0 auto;
+       color: white;
+       padding: 5px;
+       text-align: center;
+       max-width: 100%;
+   }
+   
+   .widget_item:hover .widget-info {
+       transition: all 500ms;
+       bottom: 10px;
+   }
+   
+   .widget-like {
+       display: inline-block;
+       background: url(../img/like.png) no-repeat left;
+       padding-left: 19px;
+       line-height: 15px;
+       padding-right: 10px;
+   }
+   
+   .widget-comments {
+       display: inline-block;
+       background: url(../img/comment.png) no-repeat left;
+       padding-left: 19px;
+       line-height: 15px;
+   }
+   .widget-info-with-hover{
+       position:absolute;
+       top:0px;
+       width:100%;
+       height:100%;
+       visibility: hidden;
+       opacity: 0;
+       transition: all 500ms;
+       z-index:30;
+   }
+   .widget_item:hover .widget-info-with-hover {
+       transition: all 500ms;
+       visibility: visible;
+       opacity: 1;
+   }
+   .widget-with-hover-like {
+       display: block;
+       background: url(../img/like.png) no-repeat left;
+       padding-left: 19px;
+       font-size:12px;
+       color:#fff;
+       position: absolute;
+       bottom: 5px;
+       left: 5px;
+   }
+   .widget-with-hover-instagram {
+       display: block;
+       width:22px;
+       height:22px;
+       color:#fff;
+       position: absolute;
+       top: calc(50% - 20px);
+       left: calc(50% - 20px);
+   }
+   .gallery_item .widget-with-hover-instagram {
+       top: calc(50% - 16px);
+       left: calc(50% - 16px);
+   }
+   .widget_body .widget-with-hover-instagram {
+       top: calc(50% - 10px);
+       left: calc(50% - 10px);
+   }
+   .widget-with-hover-comments {
+       display: block;
+       background: url(../img/comment.png) no-repeat left;
+       padding-left: 19px;
+       font-size:12px;
+       color:#fff;
+       position: absolute;
+       bottom: 5px;
+       right: 5px;
+   }
+   .cards_wrapper{
+       width:100%;
+       float:left;
+   }
+   .card_more_text{
+       display:none;
+   }
+   .card_item {
+       margin:15px 0;
+   }
+   .card_item{
+       /*background-color:#fff;*/
+       max-width: 100%;
+   }
+   .card_item img{
+       width:100%;
+   }
+   .card_caption{
+       padding:15px;
+   }
+   .card_links{
+       padding:0 15px 15px 15px;
+       float:left;
+       width:100%;
+   }
+   .card-like {
+       display: block;
+       background: url(../img/like-gray.png) no-repeat left;
+       padding-left: 19px;
+       width:40px;
+       font-size:14px;
+       float:right;
+       color:#BCBCBC;
+   }
+   .card-instagram {
+       display: block;
+       width:22px;
+       height:22px;
+       color:#BCBCBC;
+       float:left;
+   }
+   
+   .card-comments {
+       display: block;
+       background: url(../img/comment-gray.png) no-repeat left;
+       padding-left: 19px;
+       width:40px;
+       font-size:14px;
+       color:#BCBCBC;
+       float:right;
+   }
+   
+   .slider_full_width{
+       width: calc(100vw - 17px);
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+   .slider_nav{
+       position:relative;
+       border-radius:30px;
+       background-color:rgba(0,0,0,0.3);
+       width: 52px;
+       height:52px;
+       display:none;
+   }
+   .slider_left svg{
+       position: absolute;
+       left: 6px;
+       top: 8px;
+   }
+   .slider_right svg{
+       position: absolute;
+       left: 8px;
+       top: 8px;
+   }
+   .an_instagram_slider .slider_nav{
+       display:block;
+   }
+   .an_instagram_slider.owl-theme .owl-nav [class*=owl-]{
+       padding:0px;
+       margin:0px;
+       border-radius:30px;
+       background:none;
+   }
+   .an_instagram_slider.owl-theme .owl-nav [class*=owl-]:hover{
+       background:none;
+   }
+   
+   .an_instagram_slider .owl-prev{
+       position:absolute;
+       left: 20px;
+       top:calc(50% - 40px);
+   }
+   .an_instagram_slider .owl-next{
+       position:absolute;
+       right: 20px;
+       top:calc(50% - 40px);
+   }
+   .an_instagram_slider.owl-theme .owl-dots .owl-dot span{
+       width:7px;
+       height:7px;
+   }
+   .aninsta_container{
+       width:100%;
+       float:left;
+   }
+   @media (max-width: 576px){
+       .widget{
+           width:100% !important;
+       }
+   }
+   .slider_inner .aninstagramfeed-img,
+   .gallery_item .aninstagramfeed-img{
+       padding-top: 100%;
+       overflow: hidden;
+       border-radius: 0px!important;
+   }
+   .slider_inner .aninstagramfeed-img img,
+   .gallery_item .aninstagramfeed-img img{
+       position: absolute;
+       top: 50%;
+       -webkit-transform: translateY(-50%);
+       -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+       transform: translateY(-50%);
+   }
+   .aninsta_container {
+       width: 100%;
+       float: none; 
+       display: inline-block;
+       overflow: hidden;
+   }
+   .widget_top{
+       float: none;
+   }
+   .flex-row{
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+       -webkit-flex-wrap: wrap;
+       -moz-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+       -o-flex-wrap: wrap;
+       flex-wrap: wrap;
+       -ms-align-items: stretch;
+       align-items: stretch;
+   }
+   .card_item{
+       max-height: 100%;
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+       -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+       -ms-flex-direction: column;
+       -o-flex-direction: column;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+   .an_instagram_slider .owl-stage{
+       margin-right: auto;
+       margin-left: auto;
+   }
+   .card_item {
+       position: relative;
+       max-width: 350px;
+       overflow: hidden;
+       -webkit-transition: all .4s;
+       transition: all .4s;
+       padding-top: 1px;
+       padding-bottom: 1px;
+   }
+   .card_item::before,
+   .card_item::after {
+       position: absolute;
+       top: 0;
+       right: 14px;
+       bottom: 0;
+       left: 14px;
+       content: '';
+       opacity: 0;
+       z-index: -1;
+       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+       transition: opacity 0.35s, transform 0.35s;
+   }
+   .card_item::after {
+       border-right: 1px solid;
+       border-left: 1px solid;
+       -webkit-transform: scale(1,0);
+       transform: scale(1,0);
+   }
+   .card_item::before {
+       border-top: 1px solid;
+       border-bottom: 1px solid;
+       -webkit-transform: scale(0,1);
+       transform: scale(0,1);
+   }
+   .card_item:hover::before,
+   .card_item:hover::after {
+       opacity: 1;
+       -webkit-transform: scale(1);
+       transform: scale(1)
+   }
+   .widget_header .widget_userdata{
+       justify-content: space-between; 
+       max-width: 266px;
+       -webkit-flex-wrap: wrap;
+       -moz-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+       -o-flex-wrap: wrap;
+       flex-wrap: wrap;
+   }
+   .widget_header .widget_userdata_item{
+       flex: 0 0 auto;
+   }
+   
+   .card_inner {
+       background-color: #fff;
+   }
